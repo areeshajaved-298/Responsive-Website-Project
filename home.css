@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1672950273686-0b02667f96aa?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTIwcGhvdG9ncmFwaGVyfGVufDB8fDB8fHww);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#header-container{
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+#logo-div{
+    width: 70px;
+    height: 60px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+nav{
+    width: 900px;
+    height: 60px;
+    display: flex;
+}
+ol{
+    width: 100%;
+    color: blanchedalmond;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(51, 54, 54)
+}
+#hamburger-div{
+    width: 50px;
+    height: 50px;
+    display: none;
+    color: azure;
+}
+section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+}
+h1{
+    margin-left: 120px;
+}
+.hero-text{
+    margin-top: 220px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 2px 2px 5px gray;
+    font-weight: bolder;
+    row-gap: 15px;
+    margin-left: 10px;
+}
+.button-container {
+    margin-top: 70px;
+    display: flex;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-get {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.btn-get:hover {
+    background-color: gray;
+}
+
+.btn-read {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.btn-read:hover {
+    background-color: grey;
+}
+
+#footer-div{
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+i{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+#linkedin{
+    color: blue;
+}
+#Instagram{
+    color: #E1306C;
+}
+#facebook{
+    color: blue;
+}
+#email{
+    color: #D44638;
+}
+#whatsapp{
+    color: green;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  #button-div {
+    display: none;
+  }
+
+  #hamburger-div {
+    display: block;
+  }
+
+  .hero-text {
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto 0 auto;
+  }
+
+  .btn {
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #footer-div {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    padding: 15px 10px;
+  }
+
+  i {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+
